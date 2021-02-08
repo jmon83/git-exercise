@@ -10,6 +10,23 @@
   text-rendering: optimizeLegibility !important;
   -webkit-font-smoothing: antialiased !important;
   -moz-osx-font-smoothing: grayscale !important;
-  font-stretch: condensed !important;
-  letter-spacing: normal;
 }
+
+#top, #bottom, #left, #right {
+  background: #a5ebff;
+  }
+  #left, #right {
+    position: fixed;
+    top: 0; bottom: 0;
+    width: 15px;
+    }
+    #left { left: 0; }
+    #right { right: 0; }
+
+  #top, #bottom {
+    position: fixed;
+    left: 0; right: 0;
+    height: 15px;
+    }
+    #top { top: 0; }
+    #bottom { bottom: 0; }
