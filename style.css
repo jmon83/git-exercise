@@ -14,19 +14,34 @@
 
 #top, #bottom, #left, #right {
   background: #a5ebff;
-  }
-  #left, #right {
-    position: fixed;
-    top: 0; bottom: 0;
-    width: 15px;
-    }
-    #left { left: 0; }
-    #right { right: 0; }
+}
 
-  #top, #bottom {
-    position: fixed;
-    left: 0; right: 0;
-    height: 15px;
-    }
-    #top { top: 0; }
-    #bottom { bottom: 0; }
+#left, #right {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 15px;
+}
+
+#left {
+  left: 0;
+}
+
+#right {
+  right: 0;
+}
+
+#top, #bottom {
+  position: fixed;
+  left: 0;
+  right: 0;
+  height: 15px;
+}
+
+#top {
+  top: 0;
+}
+
+#bottom {
+  bottom: 0;
+}
