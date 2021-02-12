@@ -12,36 +12,95 @@
   -moz-osx-font-smoothing: grayscale !important;
 }
 
-#top, #bottom, #left, #right {
-  background: #a5ebff;
+body {
+  background-color: white;
+  color: black;
 }
 
-#left, #right {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  width: 15px;
+.aspectRatioBox {
+  padding-top: calc(2 / 3 * 100%);
+  background-size: cover;
+  background-position: center;
+  max-width: 90%;
+  border: 1px solid black;
+  border-radius: 5px;
 }
 
-#left {
-  left: 0;
+.article-title {
+  text-align: center;
 }
 
-#right {
-  right: 0;
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-left: 0 !important;
 }
 
-#top, #bottom {
-  position: fixed;
-  left: 0;
-  right: 0;
-  height: 15px;
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
 }
 
-#top {
-  top: 0;
+.info-column {
+  justify-content: center;
+  text-align: center;
 }
 
-#bottom {
-  bottom: 0;
+.port-column {
+  align-content: center;
+  text-align: center;
+  width: 100%;
+}
+
+.double-column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+}
+
+.port-link {
+  text-align: center;
+  font-size: 12px;
+  margin-top: -10px;
+}
+
+.social {
+  justify-content: space-around;
+}
+
+a:link {
+  color: black;
+  text-decoration: none;
+}
+
+a:visited {
+  color: black;
+  font-style: none;
+}
+
+a:hover {
+  color: black;
+}
+
+a:active {
+  color: black;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 800px) {
+  .column {
+    flex: 1;
+    align-items: center;
+  }
+
+  .double-column {
+    flex: 2;
+  }
+
+  .mobile-only {
+    display: none !important;
+  }
 }
