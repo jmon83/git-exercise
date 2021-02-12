@@ -1,3 +1,2 @@
 # git-exercise
-something small
-another small change
+Portfolio for WebDev-to-be Jay Monfort.
